@@ -1,0 +1,147 @@
+/* En esta hoja de estilos estamos estableciendo el estilo de la pagina principal.html
+Realizado por Álvaro Gil González. 17/02/2022*/
+
+/*Importamos desde google fonts las fuentes de letras del proyecto*/
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+/*Establecemos el estilo del cuerpo de la pagina web*/
+body,html{
+    height: 100%;
+    margin:0;
+    padding: 0;
+}
+
+/*Establecemos los estilos de las divisiones en las que se encuentran las imágenes*/
+.imagen1, .imagen2,.imagen3,.imagen4{
+    position: relative;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagen1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/1.jpg);
+    min-height: 100%;
+}
+
+.imagen2{
+    display: flex;
+    align-items: center;
+    background-image: url(img/2.jpg);
+    min-height:500px;
+}
+
+.imagen3{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-image: url(img/3.jpg);
+    min-height: 500px;
+}
+
+.imagen4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/4.jpg);
+    min-height: 600px;
+}
+
+/*Establecemos el estilo del primer titulo que aparece en nuestra pagina*/
+.imagen1 .titulo{
+    width:40%;
+    background-color: #605c5c;
+    text-align: center;
+}
+
+.imagen1 .titulo h1{
+    color: white;
+    letter-spacing: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*Describimos el estilo de las descripciones sobre el pueblo*/
+.descripcion1, .descripcion2,.descripcion3{
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color:#605c5c;
+    color:white;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Establecemos el estilo de los titulos que se encuentran posicionados encima de las imagenes*/
+.titulo2{
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 180px;
+    background-color:rgba(255, 255, 255, 1);
+    color:black;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+}
+
+.titulo3{
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: 180px;
+    background-color:rgba(255, 255, 255,1);
+    color:black;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+}
+/*A partir de este punto estamos estableciendo el estilo del formulario y su contenedor*/
+
+.formulario{
+    padding: 2em;
+    border-radius: 10px;
+    background-color:#605c5c;
+    color:white;
+}
+
+.centrarBoton{
+    display: flex;
+    justify-content: center;
+}
+
+.centrarBoton input{
+    display: inline-block;
+    border: none;
+    padding: 15px 32px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.centrarBoton input:hover{
+    background-color: white;
+    color:black;
+}
+
+/*Le damos un estilo básico al footer*/
+
+footer{
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color:#605c5c;
+    color:white;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Roboto', sans-serif;
+}
